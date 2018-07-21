@@ -1,0 +1,45 @@
+// Для импорта в файл подключения: @import './app/blocks.project/content/content';
+
+@import '../../scss/vars';     // файл с переменными
+@import '../../scss/png-sprite';    // файл с png-спрайтами
+
+
+.content {
+  overflow-y: hidden;
+  height: 100vh;
+
+  &_index-mobile {
+    background: url('../img/bg_index_page.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  &__withoutscroll {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+span.custom-scroll_bar-y {
+  height: 0 !important;
+  z-index: 0;
+  opacity: 1;
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 1px;
+    background: #373737;
+    height: 100vh;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+div.custom-scroll_bar-y {
+  z-index: 2;
+}

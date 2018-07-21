@@ -1,0 +1,16 @@
+// Для импорта в файл подключения: @import './app/blocks.project/video-background/video-background';
+
+@import '../../scss/vars';     // файл с переменными
+@import '../../scss/png-sprite';    // файл с png-спрайтами
+
+
+.video-background {
+  z-index: 550;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.YTPOverlay {
+  background-color: rgba(0, 0, 0, .8);
+}

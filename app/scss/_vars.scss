@@ -7,3 +7,19 @@ $transition: all ease .3s;
 
 $mainColor: #fff;
 $accentColor: #000;
+
+// Breakpoints
+$grid-max-width: 1630px;
+
+$grid-breakpoints:
+  xl 1629.9px 1024px,
+  lg 1023.9px 768px,
+  md 767.9px 568px,
+  sm 567.9px 100%;
+
+$breakpoints: (
+  xl: 1629.9px,
+  lg: 1023.9px,
+  md: 767.9px,
+  sm: 567.9px
+);

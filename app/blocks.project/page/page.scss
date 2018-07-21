@@ -5,26 +5,16 @@
 
 
 .page {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
+  background-color: #000;
+  color: #fff;
   font-family: $default-font;
   font-size: 62.5%;
   line-height: 1.5;
   min-width: 320px;
-  position: relative;
   overflow-x: hidden;
   height: 100vh;
-
-  &__header, &__footer {
-    flex-shrink: 0;
-  }
-
-  &__content {
-    flex: 1 0 auto;
-  }
-
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
